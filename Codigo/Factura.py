@@ -1,11 +1,11 @@
 class Factura:
     def __init__(self):
-        self.productos = []  # Lista para almacenar los productos en la factura
-        self.total = 0.0     # Inicializar el total en cero
+        self.productos = []  
+        self.total = 0.0     
     
     def agregar_producto(self, nombre, precio):
-        self.productos.append((nombre, precio))  # Agregar el producto como una tupla (nombre, precio)
-        self.total += precio                    # Sumar el precio al total
+        self.productos.append((nombre, precio))  
+        self.total += precio                    
     
     def generar_factura(self):
         factura = f"FACTURA\n"
