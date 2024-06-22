@@ -1,4 +1,3 @@
-# tienda.py
 from orden import Orden, ItemOrden
 
 class Tienda:
