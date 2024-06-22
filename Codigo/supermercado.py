@@ -12,7 +12,7 @@ class SupermercadoApp(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Sistema de Gestión de Tienda")
-        self.setGeometry(100, 100, 800, 800)  # Aumenta el tamaño para que la imagen sea más visible
+        self.setGeometry(100, 100, 800, 800) 
         
         self.tienda = Tienda()
         self.productos_en_orden = []
@@ -25,10 +25,8 @@ class SupermercadoApp(QMainWindow):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
         
-        # Ruta de la imagen - Asegúrate de que sea la correcta
         image_path = "C:/Users/LexV/Desktop/Python/Supermercado/Supermercado1/Gestor Supermercado/Logo.png"
 
-        # Aplicar la imagen como fondo usando una hoja de estilo CSS
         self.setStyleSheet(f"""
             QMainWindow {{
                 background-image: url({image_path});
@@ -38,11 +36,9 @@ class SupermercadoApp(QMainWindow):
             }}
         """)
 
-        # Crear el layout principal
         layout_principal = QVBoxLayout()
         central_widget.setLayout(layout_principal)
 
-        # Añadir los widgets principales al layout
         layout_principal.addWidget(self.crear_groupbox_productos())
         layout_principal.addWidget(self.crear_groupbox_clientes())
         layout_principal.addWidget(self.crear_groupbox_ordenes())
