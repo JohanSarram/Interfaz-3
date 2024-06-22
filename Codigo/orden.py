@@ -1,4 +1,3 @@
-# orden.py
 
 class ItemOrden:
     def __init__(self, producto, cantidad):
